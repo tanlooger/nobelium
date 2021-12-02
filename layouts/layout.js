@@ -13,7 +13,6 @@ const mapPageUrl = id => {
 }
 
 const Layout = ({
-  
   children,
   blockMap,
   frontMatter,
