@@ -37,15 +37,15 @@ const Layout = ({
         {frontMatter.type[0] !== 'Page' && (
           <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
             <div className="flex mb-4">
-              <a href={BLOG.socialLink || '#'} className="flex">
+              <a href={`/books/${frontMatter.book}`} className="flex">
                 <Image
-                  alt={BLOG.author}
+                  alt={frontMatter.book}
                   width={24}
                   height={24}
-                  src={`https://gravatar.com/avatar/${emailHash}`}
+                  src={frontMatter.bookco}
                   className="rounded-full"
                 />
-                <p className="ml-2 md:block">{BLOG.author}</p>
+                <p className="ml-2 md:block">{frontMatter.book}</p>
               </a>
               <span className="block">&nbsp;/&nbsp;</span>
             </div>
