@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import Container from '@/components/Container'
-import TagItem from '@/components/TagItem'
+import Container from '../components/Container'
+import TagItem from '../components/TagItem'
 import { NotionRenderer, Equation, Code, Collection, CollectionRow } from 'react-notion-x'
-import BLOG from '@/blog.config'
-import formatDate from '@/lib/formatDate'
-import { useLocale } from '@/lib/locale'
+import BLOG from '../blog.config'
+import formatDate from '../lib/formatDate'
+import { useLocale } from '../lib/locale'
 import { useRouter } from 'next/router'
-import Comments from '@/components/Comments'
+import Comments from '../components/Comments'
 
 const mapPageUrl = id => {
   return 'https://www.notion.so/' + id.replace(/-/g, '')

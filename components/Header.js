@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import BLOG from '@/blog.config'
-import { useLocale } from '@/lib/locale'
+import BLOG from '../blog.config'
+import { useLocale } from '../lib/locale'
 
 const NavBar = () => {
   const locale = useLocale()

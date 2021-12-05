@@ -1,6 +1,6 @@
-import Layout from '@/layouts/layout'
-import { getAllPosts, getPostBlocks } from '@/lib/notion'
-import BLOG from '@/blog.config'
+import Layout from '../layouts/layout'
+import { getAllPosts, getPostBlocks } from '../lib/notion'
+import BLOG from '../blog.config'
 import { createHash } from 'crypto'
 
 const BlogPost = ({ post, blockMap, emailHash }) => {

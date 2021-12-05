@@ -1,5 +1,5 @@
-import { getAllPosts, getAllBooksFromPosts } from '@/lib/notion'
-import SearchLayout from '@/layouts/searchbook'
+import { getAllPosts, getAllBooksFromPosts } from '../../lib/notion'
+import SearchLayout from '../../layouts/searchbook'
 
 export default function Book ({ books, posts, currentBook }) {
   return <SearchLayout books={books} posts={posts} currentBook={currentBook} />

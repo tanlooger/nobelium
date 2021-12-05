@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import BlogPost from '@/components/BlogPost'
-import Container from '@/components/Container'
-import Books from '@/components/Books'
+import BlogPost from '../components/BlogPost'
+import Container from '../components/Container'
+import Books from '../components/Books'
 import PropTypes from 'prop-types'
 
 const SearchLayout = ({ books, posts, currentBook }) => {
