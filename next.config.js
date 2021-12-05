@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: false,
   webpack5: true,
   images: {
     domains: ['gravatar.com', 'i.imgur.com', 'wx3.sinaimg.cn']
