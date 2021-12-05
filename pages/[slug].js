@@ -23,10 +23,11 @@ export async function getStaticPaths () {
   }
 }
 
-export async function getStaticProps ({ params: { slug }}) {
+export async function getStaticProps ({ params: { slug } }) {
   const posts = await getAllPosts({ includePages: true })
   const post = posts.find(t => t.slug === slug)
-  if(post == undefined){
+  // eslint-disable-next-line no-empty
+  if (post === undefined) {
     return {
       notFound: true
     }
