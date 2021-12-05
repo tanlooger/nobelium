@@ -29,6 +29,7 @@ const Layout = ({
       // date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
       fullWidth={fullWidth}
+      slug={frontMatter.slug}
     >
       <article>
         <h1 className="font-bold text-3xl text-black dark:text-white">
