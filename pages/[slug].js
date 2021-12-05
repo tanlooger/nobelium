@@ -23,9 +23,14 @@ export async function getStaticPaths () {
   }
 }
 
-export async function getStaticProps ({ params: { slug } }) {
+export async function getStaticProps ({ params: { slug }}) {
   const posts = await getAllPosts({ includePages: true })
   const post = posts.find(t => t.slug === slug)
+  if(post == undefined){
+    return {
+      notFound: true
+    }
+  }
   const blockMap = await getPostBlocks(post.id)
   const emailHash = createHash('md5')
     .update(BLOG.email)
