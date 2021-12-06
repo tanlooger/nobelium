@@ -35,5 +35,15 @@ module.exports = {
       })
     }
     return config
+  },
+  async redirects () {
+    return [
+      // With parameter and custom status code
+      {
+        source: 'https://freehi.cc/',
+        destination: 'https://freehi.cc',
+        statusCode: 301 // see other
+      }
+    ]
   }
 }
