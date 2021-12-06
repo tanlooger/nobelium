@@ -43,6 +43,11 @@ module.exports = {
         source: '/index.html',
         destination: '/',
         statusCode: 301 // see other
+      },
+      {
+        source: '/index.php',
+        destination: '/',
+        statusCode: 301 // see other
       }
     ]
   }
