@@ -40,8 +40,8 @@ module.exports = {
     return [
       // With parameter and custom status code
       {
-        source: 'https://freehi.cc/',
-        destination: 'https://freehi.cc',
+        source: '/index.html',
+        destination: '/',
         statusCode: 301 // see other
       }
     ]
