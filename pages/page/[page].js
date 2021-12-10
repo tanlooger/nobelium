@@ -5,6 +5,7 @@ import { getAllPosts } from '../../lib/notion'
 import BLOG from '../../blog.config'
 
 const Page = ({ postsToShow, page, showNext }) => {
+  console.log(111111111)
   return (
     <Container>
       {postsToShow &&
@@ -15,6 +16,7 @@ const Page = ({ postsToShow, page, showNext }) => {
 }
 
 export async function getStaticProps (context) {
+  console.log(222222)
   const { page } = context.params // Get Current Page No.
   const posts = await getAllPosts({ includePages: false })
   const postsToShow = posts.slice(
@@ -34,6 +36,7 @@ export async function getStaticProps (context) {
 }
 
 export async function getStaticPaths () {
+  console.log(33333)
   const posts = await getAllPosts({ includePages: false })
   const totalPosts = posts.length
   const totalPages = Math.ceil(totalPosts / BLOG.postsPerPage)

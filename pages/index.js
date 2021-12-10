@@ -5,6 +5,7 @@ import { getAllPosts } from '../lib/notion'
 import BLOG from '../blog.config'
 
 export async function getStaticProps () {
+  console.log(44444)
   const posts = await getAllPosts({ includePages: false })
   const postsToShow = posts.slice(0, BLOG.postsPerPage)
   const totalPosts = posts.length
@@ -20,6 +21,7 @@ export async function getStaticProps () {
 }
 
 const blog = ({ postsToShow, page, showNext }) => {
+  console.log(5555)
   return (
     <Container title={BLOG.title} description={BLOG.description}>
       {postsToShow.map(post => (
