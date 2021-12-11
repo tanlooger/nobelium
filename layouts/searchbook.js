@@ -22,7 +22,7 @@ const SearchLayout = ({ books, posts, currentBook }) => {
         <input
           type="text"
           placeholder={
-            currentBook ? `Search in #${currentBook}` : 'Search Articles'
+            currentBook ? `Search in #${books[currentBook].bookname}` : 'Search Articles'
           }
           className="block w-full border px-4 py-2 border-black bg-white text-black dark:bg-night dark:border-white dark:text-white"
           onChange={e => setSearchValue(e.target.value)}

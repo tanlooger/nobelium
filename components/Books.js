@@ -6,6 +6,7 @@ const Books = ({ books, currentBook }) => {
     <div className="book-container">
       <ul className="flex max-w-full mt-4 overflow-x-auto">
         {Object.keys(books).map(key => {
+          console.log('aaaaaaaaa' + currentBook)
           const selected = key === currentBook
           return (
             <li
@@ -18,10 +19,10 @@ const Books = ({ books, currentBook }) => {
             >
               <Link
                 key={key}
-                href={selected ? '/search' : `/books/${encodeURIComponent(key)}`}
+                href={selected ? '/search' : `/${encodeURIComponent(key)}`}
               >
                 <a className="px-4 py-2 block">
-                  {`${key} (${books[key]})`}
+                  {`${books[key].bookname} (${books[key].count})`}
                 </a>
               </Link>
             </li>

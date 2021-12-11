@@ -38,7 +38,7 @@ const Layout = ({
         {frontMatter.type[0] !== 'Page' && (
           <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
             <div className="flex mb-4">
-              <a href={`/books/${frontMatter.book}`} className="flex">
+              <a href={`/${frontMatter.bookid}`} className="flex">
                 <Image
                   alt={frontMatter.book}
                   width={24}
