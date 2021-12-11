@@ -41,13 +41,13 @@ const Layout = ({
             <div className="flex mb-4">
               <a href={`/${frontMatter.bookid}`} className="flex">
                 <Image
-                  alt={frontMatter.book}
+                  alt={frontMatter.bookname}
                   width={24}
                   height={24}
                   src={frontMatter.bookco}
                   className="rounded-full"
                 />
-                <p className="ml-2 md:block">{frontMatter.book}</p>
+                <p className="ml-2 md:block">{frontMatter.bookname}</p>
               </a>
               <span className="block">&nbsp;/&nbsp;</span>
             </div>
