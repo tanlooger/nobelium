@@ -15,7 +15,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
   return (
     <div>
       <Head>
-        <link rel="canonical" href={meta.slug ? `${url}/${meta.slug}` : url}></link>
+        <link rel="canonical" href={meta.slug && meta.bookid ? `${url}/${meta.bookid}/${meta.slug}` : url}></link>
         <title>{meta.title}</title>
         {/* <meta content={BLOG.darkBackground} name="theme-color" /> */}
         <meta name="robots" content="follow, index" />
@@ -35,7 +35,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         <meta property="og:description" content={meta.description} />
         <meta
           property="og:url"
-          content={meta.slug ? `${url}/${meta.slug}` : url}
+          content={meta.slug && meta.bookid ? `${url}/${meta.bookid}/${meta.slug}` : url}
         />
         <meta
           property="og:image"
