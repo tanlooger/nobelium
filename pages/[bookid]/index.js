@@ -6,12 +6,23 @@ export default function Book ({ books, posts, currentBook }) {
 }
 
 export async function getStaticProps ({ params }) {
+  if (/^\d+$/.test(params.bookid) === false) {
+    return {
+      notFound: true
+    }
+  }
   const currentBook = params.bookid
   const posts = await getAllPosts({ includePages: false })
   const books = getAllBooksFromPostsByBookid(posts)
   const filteredPosts = posts.filter(
     post => post && post.bookid && post.bookid.includes(currentBook)
   )
+
+  if (!filteredPosts.length) {
+    return {
+      notFound: true
+    }
+  }
   return {
     props: {
       books,
