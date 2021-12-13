@@ -4,7 +4,7 @@ const BLOG = {
   email: 'tanlooger@qq.com',
   link: 'https://freehi.cc',
   description: '我们会收集尽量多的中文书籍供你在线阅读，尽情享受在线读书之旅吧',
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
+  lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
@@ -17,7 +17,7 @@ const BLOG = {
   showArchive: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
-  socialLink: 'https://twitter.com/craigaryhart',
+  socialLink: 'https://twitter.com/tanlooger',
   seo: {
     keywords: ['图书', '书籍', '在线阅读', '免费书籍', '在线图书馆', '在线读书网'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
