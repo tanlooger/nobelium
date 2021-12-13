@@ -22,7 +22,7 @@ const SearchLayout = ({ books, posts, currentBook }) => {
         <input
           type="text"
           placeholder={
-            currentBook ? `Search in #${books[currentBook].bookname}` : 'Search Articles'
+            currentBook ? `在书籍《${books[currentBook].bookname}》中搜索` : '在全部书籍中搜索'
           }
           className="block w-full border px-4 py-2 border-black bg-white text-black dark:bg-night dark:border-white dark:text-white"
           onChange={e => setSearchValue(e.target.value)}

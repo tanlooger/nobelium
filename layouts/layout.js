@@ -47,7 +47,7 @@ const Layout = ({
                   src={frontMatter.bookco}
                   className="rounded-full"
                 />
-                <p className="ml-2 md:block">{frontMatter.bookname}</p>
+                <p className="ml-2 md:block">书籍《{frontMatter.bookname}》</p>
               </a>
               <span className="block">&nbsp;/&nbsp;</span>
             </div>
