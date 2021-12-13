@@ -17,7 +17,9 @@ const SearchLayout = ({ books, posts, currentBook }) => {
   }
 
   return (
-    <Container>
+    <Container
+      title={currentBook ? `《${books[currentBook].bookname}》在线免费阅读` : ''}
+    >
       <div className="relative">
         <input
           type="text"
