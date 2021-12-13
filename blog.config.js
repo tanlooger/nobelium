@@ -1,5 +1,5 @@
 const BLOG = {
-  title: 'freehi.cc',
+  title: '免费书籍在线阅读',
   author: 'freehi.cc',
   email: 'tanlooger@qq.com',
   link: 'https://freehi.cc',
@@ -19,7 +19,7 @@ const BLOG = {
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: 'https://twitter.com/craigaryhart',
   seo: {
-    keywords: ['图书', '书籍', '在线阅读', '免费书籍', '在线图书馆'],
+    keywords: ['图书', '书籍', '在线阅读', '免费书籍', '在线图书馆', '在线读书网'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
